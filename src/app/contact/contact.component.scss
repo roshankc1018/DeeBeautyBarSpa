@@ -1,0 +1,184 @@
+/* Contact Section Styles */
+
+.contact-container {
+    max-width: 1280px; /* Max width for content, centers it */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Horizontal padding */
+    padding-right: 1rem;
+    padding-top: 4rem; /* Top padding */
+    padding-bottom: 4rem; /* Bottom padding */
+    background-color: white; /* White background */
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+  }
+  
+  .contact-title {
+    font-size: 3rem; /* Large font size for title */
+    font-weight: 800; /* Extra bold font weight */
+    text-align: center;
+    color: #6b46c1; /* Deep purple color */
+    margin-bottom: 3rem; /* Space below title */
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem; /* Gap between information and form sections */
+    max-width: 64rem; /* Max width for the grid */
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media (min-width: 768px) { /* Arrange items horizontally on medium screens and up */
+      flex-direction: row;
+    }
+  }
+  
+  .contact-info-card, .contact-form-card {
+    background-color: #f6f3fc; /* Light purple background for cards */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 2rem; /* Padding inside cards */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Card shadow */
+    flex: 1; /* Allows cards to grow and shrink */
+    width: 100%; /* Full width on small screens */
+  
+    @media (min-width: 768px) { /* Half width on medium screens and up */
+      width: 50%;
+    }
+  }
+  
+  .contact-info-title, .contact-form-title {
+    font-size: 1.875rem; /* Title font size */
+    font-weight: 600; /* Semi-bold font weight */
+    color: #7e22ce; /* Purple color */
+    margin-bottom: 1.5rem; /* Space below title */
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between list items */
+    color: #4b5563; /* Dark gray text color */
+    font-size: 1.125rem; /* Larger font size for list items */
+  }
+  
+  .contact-list-item {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem; /* Icon size */
+    color: #ec4899; /* Pink color for icons */
+    margin-right: 0.75rem; /* Space to the right of icon */
+  }
+  
+  .contact-link {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline from links */
+  
+    &:hover {
+      color: #4c1d95; /* Darker purple on hover */
+      transition: color 0.2s ease-in-out; /* Smooth color transition */
+    }
+  }
+  
+  .map-section {
+    margin-top: 2rem; /* Space above the map section */
+  }
+  
+  .map-title {
+    font-size: 1.25rem; /* Map title font size */
+    font-weight: 600; /* Semi-bold font weight */
+    color: #7e22ce; /* Purple color */
+    margin-bottom: 1rem; /* Space below map title */
+  }
+  
+  .map-embed {
+    border-radius: 0.75rem; /* Rounded corners for the map iframe */
+    overflow: hidden; /* Hide anything outside the border-radius */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Map shadow */
+  }
+  
+  /* Contact Form Styles */
+  .success-message {
+    background-color: #d1fae5; /* Light green background */
+    border: 1px solid #34d399; /* Green border */
+    color: #065f46; /* Dark green text color */
+    padding: 0.75rem 1rem; /* Padding inside message */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+    position: relative;
+    margin-bottom: 1rem; /* Space below message */
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+  }
+  
+  .form-label {
+    display: block; /* Make label a block element */
+    color: #4b5563; /* Dark gray text color */
+    font-size: 0.875rem; /* Small font size */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 0.5rem; /* Space below label */
+  }
+  
+  .form-input, .form-textarea {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Input shadow */
+    border: 1px solid #e5e7eb; /* Light gray border */
+    border-radius: 0.75rem; /* Rounded corners */
+    width: 100%; /* Full width */
+    padding: 0.75rem 1rem; /* Padding inside input */
+    color: #4b5563; /* Dark gray text color */
+    line-height: 1.5; /* Line height */
+  
+    &:focus {
+      outline: none; /* Remove default outline */
+      border-color: transparent; /* Remove border color on focus */
+      box-shadow: 0 0 0 2px #8b5cf6; /* Purple ring on focus */
+    }
+    transition: all 0.2s ease-in-out; /* Smooth transition for focus effect */
+  }
+  
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  .validation-error {
+    color: #ef4444; /* Red color for validation errors */
+    font-size: 0.75rem; /* Smaller font size */
+    margin-top: 0.25rem; /* Space above error message */
+  }
+  
+  .submit-button {
+    width: 100%; /* Full width button */
+    background-color: #7c3aed; /* Purple background */
+    &:hover {
+      background-color: #6d28d9; /* Darker purple on hover */
+    }
+    color: white;
+    font-weight: 700; /* Bold font weight */
+    padding: 0.75rem 1rem; /* Padding inside button */
+    border-radius: 0.75rem; /* Rounded corners */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate interactivity */
+  
+    &:focus {
+      outline: none; /* Remove default focus outline */
+      box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.5); /* Purple shadow on focus */
+    }
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover/focus */
+    transform: scale(1); /* Initial state for hover animation */
+  
+    &:hover {
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+  
+    &:disabled {
+      opacity: 0.5; /* Reduce opacity when disabled */
+      cursor: not-allowed; /* Change cursor to 'not-allowed' */
+      transform: scale(1); /* No scale animation when disabled */
+    }
+  }

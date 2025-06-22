@@ -1,0 +1,40 @@
+/* About Section Styles */
+
+.about-container {
+    max-width: 1280px; /* Max width for content, centers it */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Horizontal padding */
+    padding-right: 1rem;
+    padding-top: 4rem; /* Top padding */
+    padding-bottom: 4rem; /* Bottom padding */
+    background-color: white; /* White background */
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .about-title {
+    font-size: 3rem; /* Large font size for title */
+    font-weight: 800; /* Extra bold font weight */
+    text-align: center;
+    color: #6b46c1; /* Deep purple color */
+    margin-bottom: 3rem; /* Space below title */
+  }
+  
+  .about-content {
+    max-width: 48rem; /* Max width for text content */
+    text-align: center;
+    color: #4b5563; /* Dark gray text color */
+    line-height: 1.625; /* Relaxed line height for readability */
+    font-size: 1.125rem; /* Slightly larger font size for body text */
+  
+    /* Styles for paragraphs within the about content */
+    & > p {
+      margin-bottom: 1.5rem; /* Space between paragraphs */
+      &:last-child {
+        margin-bottom: 0; /* No margin below the last paragraph */
+      }
+    }
+  }

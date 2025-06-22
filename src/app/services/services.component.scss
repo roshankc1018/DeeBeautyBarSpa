@@ -1,0 +1,71 @@
+/* Services Section Styles */
+
+.services-container {
+    max-width: 1280px; /* Max width for content, centers it */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Horizontal padding */
+    padding-right: 1rem;
+    padding-top: 4rem; /* Top padding */
+    padding-bottom: 4rem; /* Bottom padding */
+    background-color: white; /* White background */
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+  }
+  
+  .services-title {
+    font-size: 3rem; /* Large font size for title */
+    font-weight: 800; /* Extra bold font weight */
+    text-align: center;
+    color: #6b46c1; /* Deep purple color */
+    margin-bottom: 3rem; /* Space below title */
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 2.5rem; /* Gap between grid items */
+  
+    @media (min-width: 768px) { /* Two columns on medium screens and up */
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @media (min-width: 1024px) { /* Three columns on large screens and up */
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .service-card {
+    background-color: #f6f3fc; /* Light purple background for cards */
+    border-radius: 1rem; /* Rounded corners for cards */
+    padding: 2rem; /* Padding inside cards */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Card shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    transform: translateY(0); /* Initial state for animation */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+  
+    &:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Larger shadow on hover */
+      transform: translateY(-0.5rem); /* Lift card slightly on hover */
+    }
+  }
+  
+  .service-icon {
+    font-size: 2.5rem; /* Size of the service icon */
+    color: #ec4899; /* Pink color for icons (can be customized per icon if needed) */
+    margin-bottom: 1rem; /* Space below icon */
+  }
+  
+  .service-title {
+    font-size: 1.5rem; /* Font size for service title */
+    font-weight: 600; /* Semi-bold font weight */
+    color: #7e22ce; /* Purple color */
+    margin-bottom: 0.75rem; /* Space below service title */
+  }
+  
+  .service-description {
+    color: #4b5563; /* Dark gray text color */
+    line-height: 1.625; /* Relaxed line height for readability */
+  }

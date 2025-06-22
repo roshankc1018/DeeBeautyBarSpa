@@ -1,0 +1,34 @@
+<header class="app-header">
+    <nav class="app-nav">
+      <div class="app-brand">
+        <!-- Icon for Spa using Font Awesome. Ensure Font Awesome is installed and configured. -->
+        <i class="fas fa-spa app-icon"></i>
+        <span class="app-title">Dee Beauty Bar</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <!-- routerLink specifies the route path. routerLinkActive applies a class when the route is active. -->
+          <button [routerLink]="['/']" routerLinkActive="active-link" class="nav-button">
+            <i class="fas fa-home inline-block mr-1"></i> Home
+          </button>
+        </li>
+        <li>
+          <button [routerLink]="['/services']" routerLinkActive="active-link" class="nav-button">
+            <i class="fas fa-bath inline-block mr-1"></i> Services
+          </button>
+        </li>
+        <li>
+          <button [routerLink]="['/about']" routerLinkActive="active-link" class="nav-button">
+            <i class="fas fa-handshake-angle inline-block mr-1"></i> About Us
+          </button>
+        </li>
+        <li>
+          <button [routerLink]="['/contact']" routerLinkActive="active-link" class="nav-button">
+            <i class="fas fa-envelope inline-block mr-1"></i> Contact
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  

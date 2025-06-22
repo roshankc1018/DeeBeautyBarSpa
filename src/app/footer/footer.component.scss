@@ -1,0 +1,30 @@
+.app-footer {
+    background-color: #4c1d95; /* Very dark purple background */
+    color: white;
+    padding-top: 2rem; /* Top padding */
+    padding-bottom: 2rem; /* Bottom padding */
+    text-align: center;
+    font-size: 0.875rem; /* Small font size */
+  }
+  
+  .footer-content {
+    max-width: 1280px; /* Max width for content, centers it */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Left padding */
+    padding-right: 1rem; /* Right padding */
+  }
+  
+  .footer-tagline {
+    margin-top: 0.5rem; /* Space above the tagline */
+  }
+  
+  .footer-icon {
+    font-size: 0.875rem; /* Small icon size */
+    display: inline-block;
+    margin-left: 0.25rem; /* Small space around the icon */
+    margin-right: 0.25rem;
+    color: #fbcfe8; /* Light pink color for the icon */
+  }
+  
+  

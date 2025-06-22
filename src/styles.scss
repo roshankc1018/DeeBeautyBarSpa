@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles for Dee Beauty Bar Angular SPA */
+
+/* Import Google Fonts - Inter for consistent typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure consistent box model */
+  background-color: #f3f4f6; /* A light gray background for the entire application */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on macOS */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering on macOS */
+}
+
+/* Basic CSS Animations for smooth transitions */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Fade-in from top animation */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade-in from bottom animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animation utility classes */
+.animate-fade-in { animation: fadeIn 1s ease-out forwards; opacity: 0; }
+.animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; opacity: 0; }
+.animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; opacity: 0; }
+

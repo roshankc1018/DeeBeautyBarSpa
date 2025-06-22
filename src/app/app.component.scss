@@ -1,0 +1,21 @@
+/* Component-specific styles for AppComponent */
+
+.app-container {
+    /* Ensure the font smoothing is applied for better text rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Set a default background color for the main app container */
+    background-color: #f3f4f6; /* Light gray */
+  }
+  
+  .app-main-content {
+    /*
+     * Styles for the main content area.
+     * Add any padding, margin, or layout styles that apply generally
+     * to the main section where routed components are displayed.
+     */
+    // min-height: calc(100vh - (height of header + height of footer));
+    // Example: min-height for content to push footer to bottom on short pages
+  }
+  
+  

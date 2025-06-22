@@ -1,0 +1,83 @@
+.app-header {
+    background-color: #6b46c1; /* Deep purple background */
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
+    position: sticky; /* Keeps the header at the top when scrolling */
+    top: 0;
+    z-index: 50; /* Ensure header stays on top of other content */
+  }
+  
+  .app-nav {
+    max-width: 1280px; /* Max width for content, centers it */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; /* Padding around content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    justify-content: space-between; /* Space between brand and nav links */
+    align-items: center; /* Center items horizontally */
+  
+    /* Media query for medium screens and up */
+    @media (min-width: 768px) {
+      flex-direction: row; /* Arrange items horizontally on larger screens */
+    }
+  }
+  
+  .app-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Space below brand on small screens */
+  
+    @media (min-width: 768px) {
+      margin-bottom: 0; /* Remove margin on larger screens */
+    }
+  }
+  
+  .app-icon {
+    color: #fbcfe8; /* Light pink color for the icon */
+    margin-right: 0.75rem; /* Space to the right of the icon */
+    font-size: 2rem; /* Size of the icon */
+  }
+  
+  .app-title {
+    font-size: 1.875rem; /* Text size for the brand title */
+    font-weight: 800; /* Extra bold font weight */
+    letter-spacing: 0.05em; /* Spacing between letters */
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap to the next line if space is limited */
+    justify-content: center; /* Center links horizontally */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem; /* Space between navigation items */
+  
+    @media (min-width: 768px) {
+      gap: 2rem; /* Larger gap on medium screens and up */
+    }
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem; /* Padding for navigation buttons */
+    border-radius: 9999px; /* Fully rounded corners */
+    transition-property: all; /* Animate all changing properties */
+    transition-duration: 300ms; /* Duration of the transition */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Ease-in-out timing function */
+    background: none; /* No background by default */
+    border: none; /* No border by default */
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Indicate interactivity */
+  
+    &:hover {
+      background-color: #5534aa; /* Darker purple on hover */
+    }
+  }
+  
+  .active-link {
+    background-color: #5534aa; /* Background color for the active link */
+    color: #fbcfe8; /* Light pink color for the active link text */
+  }
+  
+  
