@@ -29,7 +29,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], // Configure the router at the application's root level
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'top',
+    }),
+  ], // Configure the router at the application's root level
   exports: [RouterModule], // Export RouterModule to make router directives available to other modules
 })
 export class AppRoutingModule {}

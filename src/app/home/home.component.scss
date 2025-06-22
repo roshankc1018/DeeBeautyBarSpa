@@ -14,7 +14,7 @@
     position: absolute;
     inset: 0; /* Cover the entire parent */
     /* Gradient overlay for better text readability and aesthetic */
-    background: linear-gradient(to right, rgba(107, 70, 193, 0.7), rgba(236, 72, 153, 0.7));
+    background: linear-gradient(to right, rgb(88 79 109 / 70%), rgb(60 30 45 / 70%));
   }
   
   .hero-content {

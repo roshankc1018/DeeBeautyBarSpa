@@ -8,9 +8,13 @@
       <ul class="nav-links">
         <li>
           <!-- routerLink specifies the route path. routerLinkActive applies a class when the route is active. -->
-          <button [routerLink]="['/']" routerLinkActive="active-link" class="nav-button">
-            <i class="fas fa-home inline-block mr-1"></i> Home
-          </button>
+          <button 
+          [routerLink]="['/']" 
+          routerLinkActive="active-link" 
+          [routerLinkActiveOptions]="{exact: true}" 
+          class="nav-button">
+          <i class="fas fa-home inline-block mr-1"></i> Home
+        </button>
         </li>
         <li>
           <button [routerLink]="['/services']" routerLinkActive="active-link" class="nav-button">
@@ -19,7 +23,7 @@
         </li>
         <li>
           <button [routerLink]="['/about']" routerLinkActive="active-link" class="nav-button">
-            <i class="fas fa-handshake-angle inline-block mr-1"></i> About Us
+            <i class="fas fa-solid fa-info-circle inline-block mr-1"></i> About Us
           </button>
         </li>
         <li>

@@ -9,15 +9,15 @@
             <ul class="contact-list">
                 <li class="contact-list-item">
                     <i class="fas fa-phone-alt contact-icon"></i>
-                    <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                    <a href="tel:+14105708646" class="contact-link">+1 (410) 570-8646</a>
                 </li>
                 <li class="contact-list-item">
                     <i class="fas fa-envelope contact-icon"></i>
-                    <a href="mailto:info@deebeautybar.com" class="contact-link"></a>
+                    <a href="mailto:info@deebeautybar.com" class="contact-link">infodeebeautybar.com</a>
                 </li>
                 <li class="contact-list-item">
                     <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <span>123 Spa Avenue, Beauty City, BC 12345</span>
+                    <span>5220 E Southport Rd Suite G, Indianapolis, IN 46237</span>
                 </li>
                 <li class="contact-list-item">
                     <i class="fas fa-calendar-alt contact-icon"></i>
@@ -28,66 +28,61 @@
                 <h4 class="map-title">Find Us on Map:</h4>
                 <div class="map-embed">
                     <!-- Google Maps iframe for location display -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2505679354784!2d-122.41941568468171!3d37.7749292797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858087e594d2f3%3A0x6b801a61250274a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
-                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" title="Google Map Location"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.2172045021343!2d-86.08222798801968!3d39.667328371451326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b433994d97205%3A0x81fa088260f7ed42!2sDee%20Beauty%20Bar!5e0!3m2!1sen!2sus!4v1750623564332!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
 
-        <!-- Contact Form Section -->
-        <div class="contact-form-card animate-fade-in" style="animation-delay: 0.2s;">
-            <h3 class="contact-form-title">Send Us a Message</h3>
-            <!-- Success message, displayed conditionally based on 'showConfirmation' -->
-            <div *ngIf="showConfirmation" class="success-message" role="alert">
-                <i class="fas fa-check-circle mr-2"></i>
-                <span class="block sm:inline">Your message has been sent successfully!</span>
-            </div>
-            <!-- Reactive form with formGroup and ngSubmit for submission handling -->
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
-                <div>
-                    <label for="name" class="form-label">
-                        <i class="fas fa-user inline-block mr-1"></i> Name
-                    </label>
-                    <input type="text" id="name" formControlName="name" class="form-input" placeholder="Your Name"
-                        required>
-                    <!-- Validation error message for name field -->
-                    <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
-                        class="validation-error">
-                        Name is required.
-                    </div>
-                </div>
-                <div>
-                    <label for="email" class="form-label">
-                        <i class="fas fa-envelope inline-block mr-1"></i> Email
-                    </label>
-                    <input type="email" id="email" formControlName="email" class="form-input"
-                        placeholder="your@example.com" required>
-                    <!-- Validation error message for email field -->
-                    <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
-                        class="validation-error">
-                        Valid email is required.
-                    </div>
-                </div>
-                <div>
-                    <label for="message" class="form-label">
-                        <i class="fas fa-paper-plane inline-block mr-1"></i> Message
-                    </label>
-                    <textarea id="message" formControlName="message" rows="5" class="form-textarea"
-                        placeholder="Your message to us..." required></textarea>
-                    <!-- Validation error message for message field -->
-                    <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
-                        class="validation-error">
-                        Message is required.
-                    </div>
-                </div>
-                <button type="submit" [disabled]="contactForm.invalid"
-                    class="submit-button"
-                    >
-                    Send Message
-                </button>
-            </form>
+
+  
+  <!-- Social Media Section -->
+  <div class="contact-form-card animate-fade-in" style="animation-delay: 0.2s;">
+    <h3 class="contact-form-title">Follow Us</h3>
+    
+    <!-- Instagram Card -->
+    <div class="social-card instagram-card">
+      <a href="https://www.instagram.com/deebeautybar/" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-link-button">
+        <div class="social-icon-container">
+          <!-- standard Instagram icon -->
+          <i class="fab fa-instagram social-platform-icon"></i>
         </div>
+        <div class="social-content">
+          <h4 class="social-platform-name">Instagram</h4>
+          <p class="social-handle">deebeautybar</p>
+          <span class="social-cta">Follow for daily beauty tips!</span>
+        </div>
+      </a>
+    </div>
+  
+    <!-- Facebook Card -->
+    <div class="social-card facebook-card">
+      <a href="https://www.facebook.com/dee.beautybar/" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="social-link-button">
+        <div class="social-icon-container">
+          <!-- default Facebook icon -->
+          <i class="fab fa-facebook social-platform-icon"></i>
+        </div>
+        <div class="social-content">
+          <h4 class="social-platform-name">Facebook</h4>
+          <p class="social-handle">Dee Beauty Bar</p>
+          <span class="social-cta">Like us for updates &amp; offers!</span>
+        </div>
+      </a>
+    </div>
+  
+    <!-- Call to Action -->
+    <div class="social-footer">
+      <p class="social-footer-text">
+        <i class="fas fa-heart" style="color: #ec4899; margin-right: 0.5rem;"></i>
+        Stay connected with us!
+      </p>
+    </div>
+  </div>
+  
     </div>
 </div>

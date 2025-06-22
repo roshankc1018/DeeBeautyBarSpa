@@ -18,27 +18,6 @@ export class ServicesComponent implements OnInit {
     },
     {
       iconClass: 'fas fa-handshake-angle',
-      title: 'Relaxing Massages',
-      description:
-        'Swedish, deep tissue, and hot stone massages to melt away stress.',
-    },
-    {
-      iconClass: 'fas fa-sparkles',
-      title: 'Manicure & Pedicure',
-      description: 'Pampering nail care, including gel and acrylic options.',
-    },
-    {
-      iconClass: 'fas fa-bath',
-      title: 'Body Treatments',
-      description: 'Exfoliation, wraps, and scrubs for silky smooth skin.',
-    },
-    {
-      iconClass: 'fas fa-sparkles',
-      title: 'Waxing Services',
-      description: 'Gentle and efficient hair removal for all areas.',
-    },
-    {
-      iconClass: 'fas fa-handshake-angle',
       title: 'Makeup Application',
       description:
         'Professional makeup for special occasions or everyday glam.',
