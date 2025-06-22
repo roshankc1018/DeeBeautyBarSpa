@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "dee-beauty-bar-spa:build:production"
+              "buildTarget": "dee-beauty-bar-spa:build:production"
             },
             "development": {
-              "browserTarget": "dee-beauty-bar-spa:build:development"
+              "buildTarget": "dee-beauty-bar-spa:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dee-beauty-bar-spa:build"
+            "buildTarget": "dee-beauty-bar-spa:build"
           }
         },
         "test": {
